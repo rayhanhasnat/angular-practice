@@ -1,0 +1,50 @@
+.items {
+    width: 100%;
+
+    .item {
+        width:100%;
+        padding: 15px;
+        display: flex;
+        background-color: #361a1d;
+        color: white;
+        margin-top: 1px;
+
+        .avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            overflow: hidden;
+            background-size: cover;
+            background-position: top center;
+            margin-right: 15px;
+        }
+
+        .description {
+            h1 {
+                font-size: 15px;
+            }
+
+            p {
+                font-size: 13px;
+                color: #797878;
+            }
+        }
+
+        .action {
+            align-self: center;
+            justify-self: center;
+            margin-left: auto;
+            text-align: right;
+
+
+            button {
+                width: 20px;
+                height: 20px;
+                background: red;
+                color: white;
+                margin: 2px;
+            }
+
+        }
+    }
+}

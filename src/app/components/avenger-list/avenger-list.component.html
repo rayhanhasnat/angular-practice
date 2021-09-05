@@ -1,0 +1,13 @@
+<div class="items">
+    <div class="item" *ngFor="let avenger of avengers">
+        <div class="avatar" [ngStyle]="{ 'background-image': 'url(' + avenger.imageUrl + ')' }">
+        </div>
+
+        <div class="description">
+            <h1 [routerLink]="['/avenger', avenger.id]">{{ avenger.superheroName }}</h1>
+            <p>({{ avenger.realName }})</p>
+            <p>Weapons: {{ avenger.weapons }}</p>
+            <p>Can Fly: {{ avenger.canFly | bootToText }}</p>
+        </div>
+    </div>
+</div>

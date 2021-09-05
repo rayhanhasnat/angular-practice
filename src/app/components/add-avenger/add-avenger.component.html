@@ -1,0 +1,25 @@
+<div class="add-form">
+    <form action="">
+        <div class="form-group">
+            <label>Superhero Name</label>
+            <input type="text" name="superheroName" [(ngModel)]="avenger.superheroName">
+        </div>
+        <div class="form-group">
+            <label>Real Name</label>
+            <input type="text" name="realName" [(ngModel)]="avenger.realName">
+        </div>
+        <div class="form-group">
+            <label>Weapons</label>
+            <input type="text" name="weapons" [(ngModel)]="avenger.weapons">
+        </div>
+        <div class="form-group">
+            <label>Image Url</label>
+            <input type="text" name="imageUrl" [(ngModel)]="avenger.imageUrl">
+        </div>
+        <div class="form-group">
+            <label>Can Fly?</label>
+            <input type="checkbox" name="canFly" [(ngModel)]="avenger.canFly">
+            <button (click)="save()">Save</button>
+        </div>
+    </form>
+</div>
